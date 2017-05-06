@@ -45,11 +45,11 @@ if __name__ == '__main__':
     # define the test plan:
     # plan1: fix 'max_time', if length_of_input_sequence is longer than max_time, drop the oldest element to make the input sequence same length as max_time
     # plan2: use reshape function to reshape input sequence to (max_time, -1)
-    test_plan = 1
+    test_plan = 2 
 
     #hyper-paramenter of LSTM cell and RNN
     num_units_in_LSTMCell = n_classes
-    max_time =6 
+    max_time =5 
     if test_plan == 1:
         dims_of_input = 1
     else:
